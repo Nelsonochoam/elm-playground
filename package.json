@@ -1,0 +1,20 @@
+{
+  "name": "elm-playground",
+  "version": "1.0.0",
+  "description": "Just me testing out elm. The examples folder contains some basic examples of doing basic things described on the elm guide  https://guide.elm-lang.org/",
+  "main": "elm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nelsonochoam/elm-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nelsonochoam/elm-playground/issues"
+  },
+  "homepage": "https://github.com/Nelsonochoam/elm-playground#readme"
+}
