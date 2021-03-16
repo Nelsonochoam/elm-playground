@@ -1,3 +1,5 @@
+module Main exposing (..)
+
 import Browser
 
 import Http
@@ -88,10 +90,19 @@ subscriptions model = Sub.none
 
 view: Model -> Html Msg
 view model =
-   div []
-    [ input [ placeholder "City location", value model.location, onInput Location ] []
-    , div [] [ text "Weather" ] 
-    ]
+  case model.weather of
+
+    Loading ->
+      text "Loading"
+
+    Failure ->
+      text "Oops something went wrong"
+
+    Success temp ->
+       div []
+        [ input [ placeholder "City location", value model.location, onInput Location ] []
+        , div [] [ text (String.fromFloat temp) ]
+        ]
 
 
 
