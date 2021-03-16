@@ -11,14 +11,9 @@ https://openweathermap.org/ api.
 
 ELM_APP_OPEN_WEATHER_KEY=<YOUR_WEATHER_API_KEY>
 
-2) Run 
+2) Run
 
-`elm make src/Main.elm --output=elm.js`
-
-
-3) Run the app
-
-`open index.html`
+`npm run dev`
 
 
 # Other

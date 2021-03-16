@@ -45,7 +45,7 @@ init flags =
 
 syncWeather: Model -> Cmd Msg
 syncWeather model = Http.get
-  { url = String.concat ["https://api.openweathermap.org/data/2.5/weather?q=", model.flags.apiKey, "&appid=47d29c9921a8182ba4c758499cc6d5d7"]
+  { url = String.concat ["https://api.openweathermap.org/data/2.5/weather?q=", model.location, "&appid=", model.flags.apiKey]
   , expect = Http.expectJson GotWeather weatherDecoder
   }
 

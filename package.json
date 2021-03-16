@@ -1,10 +1,13 @@
 {
   "name": "elm-playground",
   "version": "1.0.0",
-  "description": "Just me testing out elm. The examples folder contains some basic examples of doing basic things described on the elm guide  https://guide.elm-lang.org/",
+  "description": "Elm examples and learning",
   "main": "elm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "dev": "webpack serve --mode development --port 3000",
+    "errors": "webpack --mode development --display-error-details"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/Nelsonochoam/elm-playground/issues"
   },
-  "homepage": "https://github.com/Nelsonochoam/elm-playground#readme"
+  "homepage": "https://github.com/Nelsonochoam/elm-playground#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "loader-utils": "^2.0.0",
+    "webpack": "^5.26.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "elm-webpack-loader": "^7.0.1"
+  }
 }
